@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "/Users/aubrieshepard/premierCodeChallenge/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": []

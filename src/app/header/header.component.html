@@ -1,0 +1,40 @@
+<div id="headerWrapper">
+    <div id="navBar">
+        <a href="https://discord.com/">Discord</a>
+        <div id="navLinks">
+            <a href="https://discord.com/download">Download</a>
+            <a href="https://discord.com/nitro">Nitro</a>
+            <a href="https://discord.com/servers">Discover</a>
+            <a href="https://discord.com/safetycenter">Safety</a>
+            <a href="https://support.discord.com/hc/en-us">Support</a>
+            <a href="https://discord.com/blog">Blog</a>
+            <a href="https://discord.com/jobs">Careers</a>
+        </div>
+        <div id="loginButton">
+            <a href="https://discord.com/login">Login</a>
+        </div>
+    </div>
+    <div id="headerContent">
+        <h1>Imagine a place...</h1>
+        <p>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
+        <div id="headerButtons">
+            <a href="https://discord.com/api/download?platform=osx">Download</a>
+            <button (click)="onClick()" type="button">Open Discord in your browser</button>
+        </div>
+        <ng-container *ngIf="visible">
+            <div id="formWrapper">
+                <form id="form" (ngSubmit)="submitForm()">
+                    <input id="input" [(ngModel)]="username" type="text" name="username" placeholder="Enter a username">
+                    <button id="button"><img src="/assets/arrow.svg"></button>
+                </form>
+                <div id="terms">
+                    By registering, you agree to Discord's 
+                    <a href="https://discord.com/terms" target="_blank">Terms of Service</a>
+                     and 
+                    <a href="https://discord.com/privacy" target="_blank">Privacy Policy</a>
+                    .
+                </div>
+            </div> 
+        </ng-container>       
+    </div>
+</div>
