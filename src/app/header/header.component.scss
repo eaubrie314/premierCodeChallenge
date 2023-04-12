@@ -94,7 +94,6 @@
         line-height: 95%;
         text-transform: uppercase;
         text-rendering: geometricPrecision;
-        font-stretch: ultra-expanded;
     }
 
     p {
@@ -220,5 +219,110 @@
     a {
         text-decoration: underline;
         color: #fff;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #headerWrapper {
+        background: #404eed;
+        position: relative;
+        min-height: 626px;
+        font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        width: 100%;
+    }
+    
+    #navBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1260px;
+        box-sizing: border-box;
+        padding: 24px;
+        position: relative;
+        margin-bottom: 0;
+        height: 100%;
+        padding-bottom: 0;
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+    #navLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        position: relative;
+    
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+        }
+    
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    
+    #loginButton {
+        width: 124px;
+        text-align: center;
+        display: block;
+    
+        a {
+            border-radius: 40px;
+            font-size: 14px;
+            padding: 7px 16px;
+            background-color: white;
+            color: #404eed;
+            text-decoration: none;
+            line-height: 24px;
+            cursor: pointer;
+            font-weight: 500;
+            align-items: center;
+            transition-property: background-color,color,box-shadow,-webkit-box-shadow;
+            transition-duration: .2s;
+            transition-timing-function: ease-in-out;
+        }
+    
+        a:hover {
+            color: #5865f2;
+            box-shadow: 0 8px 15px rgba(0,0,0,.2);
+        }
+    }
+    
+    #headerContent {
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 8px;
+        color: white;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 95%;
+            text-transform: uppercase;
+        }
+    
+        p {
+            margin-top: 40px;
+            font-size: clamp(16px,2vw,20px);
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

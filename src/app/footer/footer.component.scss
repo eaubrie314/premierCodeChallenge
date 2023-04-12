@@ -65,6 +65,10 @@
         display: block;
         text-decoration: none;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 #signupSection {
@@ -122,5 +126,136 @@
     a:hover {
         background-color: hsl(235,86.1%,71.8%);
         box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #footerWrapper {
+        background-color: #23272a;
+        padding-top: 80px;
+        padding-bottom: 64px;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+    
+    #footer {
+        width: 100%;
+        max-width: 1260px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0 20px;
+        padding: 0 24px;
+    }
+    
+    #sectionOne {
+        grid-column: span 4;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-flex: 1;
+        margin-bottom: 56px;
+        color: #fff;
+    
+        h4 {
+            color: #5865f2;
+            line-height: 95%;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 32px;
+        }
+    }
+    
+    #sectionTwo {
+        display: none;
+    }
+    
+    .footerSections {
+        grid-column: span 2;
+        margin-bottom: 40px;
+    
+        h5 {
+            color: #5865f2;
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 8px;
+        }
+    
+        a {
+            color: #fff;
+            margin-top: 8px;
+            display: block;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    #signupSection {
+        width: 100%;
+        max-width: 1260px;
+        box-sizing: border-box;
+        background-color: #23272a;
+        padding: 24px;
+    }
+    
+    #topLine {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 32px;
+        background-color: #5865f2;
+    }
+    
+    #footerButtons {
+        display: flex;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    
+    #signupButton {
+        flex: 0 0 auto;
+        width: 124px;
+        text-align: end;
+        display: flex;
+        flex-flow: row-reverse;
+    
+        a {
+            white-space: nowrap;
+            border-radius: 40px;
+            font-size: 14px;
+            padding: 7px 16px;
+            background-color: #404eed;
+            color: white;
+            text-decoration: none;
+            line-height: 24px;
+            cursor: pointer;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition-property: background-color,color,box-shadow,-webkit-box-shadow;
+            transition-duration: .2s;
+            transition-timing-function: ease-in-out;
+        }
+    
+        a:hover {
+            background-color: hsl(235,86.1%,71.8%);
+            box-shadow: 0 8px 15px rgba(0,0,0,.2);
+        }
     }
 }
